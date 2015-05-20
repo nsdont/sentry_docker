@@ -1,0 +1,12 @@
+web:
+    image:  sentry
+    links:
+        - db
+
+db:
+    image: postgres:9.4
+    environment:
+        POSTGRES_PASSWORD: postgres
+        POSTGRES_USER: postgres
+    volumes:
+        - postgres_data:/var/lib/postgresql/data
