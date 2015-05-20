@@ -5,6 +5,8 @@ web:
         - redis
     ports:
         - "9000:9000"
+    volumes:
+        - sentry:/home/user/.sentry
 
 db:
     image: postgres:9.4
