@@ -134,7 +134,7 @@ SENTRY_TSDB = 'sentry.tsdb.redis.RedisTSDB'
 
 SENTRY_FILESTORE = 'django.core.files.storage.FileSystemStorage'
 SENTRY_FILESTORE_OPTIONS = {
-    'location': '/home/user/.sentry/sentry-files',
+    'location': '/tmp/sentry-files',
 }
 
 ################
